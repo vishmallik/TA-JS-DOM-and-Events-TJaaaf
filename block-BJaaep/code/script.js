@@ -1,15 +1,22 @@
 function main() {
-  let boxes = document.querySelectorAll(".box");
-  boxes.forEach((box, index) => {
+  let boxeswoed = document.querySelectorAll(".first li");
+  boxeswoed.forEach((box, index) => {
     box.addEventListener("click", function () {
       box.innerText = `${index + 1}`;
+      setTimeout(() => {
+        box.innerText = ``;
+      }, 5000);
     });
   });
-
-  let ul = document.querySelector(".boxes");
-  ul.addEventListener("click", function (event) {
-    // event.target.innerText = 0;
-    event.target.innerText = +event.target.innerText + 1;
-  });
 }
+
+let boxeswed = document.querySelector(".second");
+boxeswed.addEventListener("click", function (event) {
+  let text = event.target.dataset.box;
+  event.target.innerText = text;
+  setTimeout(() => {
+    event.target.innerText = ``;
+  }, 5000);
+});
+
 main();
