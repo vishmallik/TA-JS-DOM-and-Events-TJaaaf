@@ -142,7 +142,7 @@ h1 {
 }
 .screen {
   background-color: black;
-  height: 25%;
+  height: 10%;
   border-radius: 1rem;
   color: white;
   font-size: 3rem;
@@ -150,6 +150,7 @@ h1 {
   display: flex;
   justify-content: end;
   align-items: center;
+  padding: 2rem;
 }
 .keypad {
   margin: 1rem 0;
