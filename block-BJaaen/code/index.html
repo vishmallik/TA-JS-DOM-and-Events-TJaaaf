@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper and Scissors</title>
-  </head>
-  <body>
-    <script src="./script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6ff1e80dcd.js" crossorigin="anonymous"></script>
+  <title>Rock Paper and Scissors</title>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Rock Paper Scissor</h1>
+    </header>
+    <div class="parent">
+      <div class="player">
+        <p>
+          You - <span class="player-counter"></span>
+          <span class="player-selection"></span>
+        </p>
+        <i data-type="rock" class="player-rock fa fa-hand-rock-o" aria-hidden="true"></i>
+        <i data-type="paper" class="player-paper fa fa-hand-paper-o" aria-hidden="true"></i>
+        <i data-type="scissor" class="player-scissors fa fa-hand-scissors-o" aria-hidden="true"></i>
+      </div>
+      <div class="pc">
+        <p>
+          Computer - <span class="pc-counter"></span><span class="pc-selection"></span>
+        </p>
+        <i class="rock fa fa-hand-rock-o" aria-hidden="true"></i>
+        <i class="paper fa fa-hand-paper-o" aria-hidden="true"></i>
+        <i class="scissors fa fa-hand-scissors-o" aria-hidden="true"></i>
+        <i class="reset fa-solid fa-arrows-rotate"></i>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
 </html>
