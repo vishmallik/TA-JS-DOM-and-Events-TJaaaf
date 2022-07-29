@@ -4,8 +4,8 @@ function handleInput(event) {
   let newItem = document.createElement("div");
   let root = document.querySelector("main");
 
-  newItem.innerHTML = `<input type="checkbox" name="checkbox" id="">
-    <label for=""></label>
+  newItem.innerHTML = `<input type="checkbox" name="checkbox" id="checkbox">
+    <label for="checkbox"></label>
     <i class="fa-solid fa-square-xmark"></i>`;
 
   if (event.keyCode === 13) {
