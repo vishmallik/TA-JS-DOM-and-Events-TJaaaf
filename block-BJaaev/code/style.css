@@ -76,28 +76,16 @@ ul {
 li {
   display: flex;
   justify-content: flex-start;
-  /* flex-wrap: wrap; */
   align-items: center;
   padding: 1rem 2rem 1rem 0.5rem;
   list-style: none;
   text-align: left;
-  /* height: 3rem */
   max-width: 100%;
   border-bottom: 1px solid var(--placeholder);
   position: relative;
   background-color: rgb(253, 246, 246);
 }
-/* input[type="checkbox"] {
-  width: 1.8rem;
-  height: 1.8rem;
-    flex : 0 1 20%
-  border-radius: 50%;
 
-  border: 1px solid rgb(92, 91, 91);
-
-  cursor: pointer;
-  clip-path: circle(40% at 50% 50%);
-} */
 li > span {
   padding: 0 1rem;
   font-size: 1.5rem;
@@ -126,7 +114,6 @@ li > span {
   width: 30%;
 }
 .tab > span {
-  border: 1px solid var(--accent);
   padding: 0 0.5rem;
   border-radius: 5px;
   cursor: pointer;
@@ -137,4 +124,20 @@ li > span {
 .status > span:last-child {
   visibility: hidden;
   cursor: pointer;
+}
+.selected {
+  border: 1px solid rgb(175, 140, 140);
+  background-color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
