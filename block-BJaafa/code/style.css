@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgb(255, 164, 164),
+    rgb(253, 204, 112),
+    rgb(180, 197, 104)
+  );
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 50px;
+}
+.box {
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 600;
+}
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  /* text-align: center; */
+  margin: 0 auto;
+  width: 450px;
+  position: relative;
+}
+
+#choices {
+  margin: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+.selected {
+  border: 2px solid black;
+}

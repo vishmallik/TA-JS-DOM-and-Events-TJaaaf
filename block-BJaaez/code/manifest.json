@@ -1,0 +1,12 @@
+{
+    "name":"TODO app",
+    "description": "An app to list and mark your TODOs",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons":{
+        "1":"todo.png"},
+    "chrome_url_overrides":{
+        "newtab":"index.html"
+    }
+
+}
