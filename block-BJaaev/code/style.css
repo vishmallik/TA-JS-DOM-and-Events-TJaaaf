@@ -141,3 +141,15 @@ li > span {
     text-align: center;
   }
 }
+.fa-xmark:hover {
+  color: red;
+  cursor: pointer;
+}
+.fa-github {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: black;
+}
+.fa-github:hover {
+  color: rgb(175, 140, 140);
+}
